@@ -1,0 +1,70 @@
+#root {
+	--slider-text-color: #f4f3f1;
+}
+
+.homepage-slider-container {
+	width: 100%;
+	height: calc(100vh - 78px);
+	background-image: url("../../assets/noble-deer.png");
+}
+
+.homepage-slider-container img {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	vertical-align: middle;
+}
+
+.homepage-slider-container h1,
+.homepage-slider-container h2 {
+	margin: 0;
+}
+
+.slider-title {
+	font-family: "Libre Bodoni";
+	font-size: 3.75rem;
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: var(--slider-text-color);
+	width: 100%;
+}
+
+.slider-upper-title,
+.slider-bottom-title {
+	font-family: "Montserrat";
+	font-size: 1.125rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	color: var(--slider-text-color);
+}
+
+.white-stripe {
+	width: 65px;
+	height: 1px;
+	background-color: var(--slider-text-color);
+	opacity: 0.55;
+}
+
+.slider-upper-title-container {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.slider-upper-title-container,
+.slider-title,
+.slider-bottom-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.slider-upper-title-container {
+	top: 43%;
+}
+
+.slider-bottom-title {
+	top: 57%;
+}
