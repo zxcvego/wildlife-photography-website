@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import DensityMediumIcon from "@mui/icons-material/DensityMedium";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
 	return (
@@ -14,7 +14,7 @@ const Navbar = () => {
 					<h2>PROJECTS</h2>
 					<h2>CONTACT</h2>
 					<h2>
-						<DensityMediumIcon />
+						<MenuIcon />
 					</h2>
 				</div>
 			</div>
