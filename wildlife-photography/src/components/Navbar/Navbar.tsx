@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 
 const Navbar = () => {
 	return (
@@ -13,6 +14,9 @@ const Navbar = () => {
 						<h2>GALLERY</h2>
 						<h2>PROJECTS</h2>
 						<h2>CONTACT</h2>
+						<h2 className="test">
+							<DensityMediumIcon />
+						</h2>
 					</div>
 				</div>
 			</div>

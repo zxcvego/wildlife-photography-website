@@ -16,21 +16,25 @@
 	font-family: "Libre Bodoni";
 	font-weight: 400;
 	position: relative;
-	right: 120px;
+	right: 125px;
 }
 
 .navbar-buttons-container {
 	display: flex;
 	justify-content: space-around;
-	gap: 80px;
+	align-items: center;
+	gap: 89px;
 	color: #343433;
 	letter-spacing: 1.92px;
+	position: relative;
+	left: 133px;
 }
 
 .navbar-buttons-container h2 {
 	font-size: 0.9375rem;
 	font-family: "Montserrat";
 	font-weight: 400;
+	cursor: pointer;
 }
 
 .navbar-buttons-container h2:first-child {
