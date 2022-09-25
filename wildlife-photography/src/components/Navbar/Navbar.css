@@ -1,0 +1,41 @@
+.navbar-container {
+	width: 100vw;
+	height: 78px;
+	background-color: #edece8;
+}
+
+.navbar-flexbox {
+	height: inherit;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar-flexbox h1 {
+	font-size: 2.25rem;
+	font-family: "Libre Bodoni";
+	font-weight: 400;
+	position: relative;
+	right: 120px;
+}
+
+.navbar-buttons-container {
+	display: flex;
+	justify-content: space-around;
+	gap: 80px;
+	color: #343433;
+	letter-spacing: 1.92px;
+}
+
+.navbar-buttons-container h2 {
+	font-size: 0.9375rem;
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+
+.navbar-buttons-container h2:first-child {
+	font-weight: 500;
+}
+
+/* font-family: 'Libre Bodoni', serif;
+font-family: 'Montserrat', sans-serif; */
