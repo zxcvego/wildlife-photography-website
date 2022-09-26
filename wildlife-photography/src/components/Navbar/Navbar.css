@@ -1,3 +1,7 @@
+.menu-icon {
+	display: none;
+}
+
 .navbar-container {
 	height: 78px;
 	background-color: #edece8;
@@ -11,13 +15,12 @@
 	font-family: "Libre Bodoni";
 	font-weight: 400;
 	margin-left: 50px;
-	margin-right: 15px;
+
 	white-space: nowrap;
 }
 
 .navbar-buttons-container {
 	display: flex;
-	margin-right: 50px;
 }
 
 .navbar-buttons-titles {
@@ -26,12 +29,6 @@
 	gap: 73px;
 	letter-spacing: 1.92px;
 	margin-right: 50px;
-}
-
-@media (max-width: 1112px) {
-	.navbar-buttons-titles {
-		display: none;
-	}
 }
 
 .navbar-buttons-container h2 {
@@ -43,4 +40,15 @@
 
 .navbar-buttons-container h2:first-child {
 	font-weight: 500;
+}
+
+@media (max-width: 980px) {
+	.navbar-buttons-titles {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+		margin-right: 50px;
+	}
 }

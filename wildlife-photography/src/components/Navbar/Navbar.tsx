@@ -15,7 +15,7 @@ const Navbar = () => {
 						<h2>PROJECTS</h2>
 						<h2>CONTACT</h2>
 					</div>
-					<h2>
+					<h2 className="menu-icon">
 						<MenuIcon />
 					</h2>
 				</div>
