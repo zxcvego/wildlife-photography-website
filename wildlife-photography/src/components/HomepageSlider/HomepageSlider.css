@@ -5,7 +5,7 @@
 .homepage-slider-container {
 	width: 100%;
 	height: calc(100vh - 78px);
-	background-image: url("../../assets/noble-deer.png");
+	background-image: url("../../assets/noble-deer.jpg");
 }
 
 .homepage-slider-container img {
@@ -27,6 +27,7 @@
 	letter-spacing: 3px;
 	color: var(--slider-text-color);
 	width: 100%;
+	white-space: nowrap;
 }
 
 .slider-upper-title,
@@ -36,6 +37,8 @@
 	font-weight: 500;
 	letter-spacing: 3px;
 	color: var(--slider-text-color);
+	white-space: nowrap;
+	opacity: 0.85;
 }
 
 .white-stripe {
@@ -67,4 +70,25 @@
 
 .slider-bottom-title {
 	top: 57%;
+}
+
+@media (max-width: 930px) {
+	.slider-title {
+		font-size: 6.2vw;
+	}
+}
+
+@media (max-width: 630px) {
+	.slider-title {
+		white-space: nowrap;
+		font-size: 5.45vw;
+	}
+
+	.slider-upper-title-container {
+		top: 45%;
+	}
+
+	.slider-bottom-title {
+		top: 55%;
+	}
 }

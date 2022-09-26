@@ -1,5 +1,5 @@
 import "./HomepageSlider.css";
-import nobleDeerImg from "../../assets/noble-deer.png";
+import nobleDeerImg from "../../assets/noble-deer.jpg";
 
 const HomepageSlider = () => {
 	return (
