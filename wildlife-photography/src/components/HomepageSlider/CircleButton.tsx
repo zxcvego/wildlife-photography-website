@@ -20,7 +20,7 @@ const CircleButton = (props: circleButtonI) => {
 				onClick={() => {
 					setSliderImageNumber(id);
 					const tempSliderImages = sliderImages;
-					tempSliderImages.forEach((x: any) => (x.active = false));
+					tempSliderImages.forEach((x: sliderImagesI) => (x.active = false));
 					tempSliderImages[id].active = true;
 					setSliderImages(tempSliderImages);
 					console.log(tempSliderImages);
