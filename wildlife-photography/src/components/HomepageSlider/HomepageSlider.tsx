@@ -1,4 +1,5 @@
 import "./HomepageSlider.css";
+import "./CircleButton.css";
 import nobleDeerImg from "../../assets/noble-deer.jpg";
 
 const HomepageSlider = () => {
@@ -13,6 +14,11 @@ const HomepageSlider = () => {
 				</div>
 				<h1 className="slider-title">WILDLIFE PHOTOGRAPHER</h1>
 				<h2 className="slider-bottom-title">SINCE 2012</h2>
+				<div className="circle-button-container">
+					<div className="circle-button-filled"></div>
+					<div className="circle-button-unfilled"></div>
+					<div className="circle-button-unfilled"></div>
+				</div>
 			</div>
 		</>
 	);

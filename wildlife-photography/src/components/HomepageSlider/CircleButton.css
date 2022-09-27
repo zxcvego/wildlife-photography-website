@@ -1,0 +1,29 @@
+#root {
+	--circle-button-color: #f4f3f1;
+}
+
+.circle-button-filled {
+	width: 18px;
+	height: 18px;
+	background-color: var(--circle-button-color);
+	border-radius: 100%;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.circle-button-unfilled {
+	width: 14px;
+	height: 14px;
+	border: 2px solid var(--circle-button-color);
+	border-radius: 100%;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.circle-button-container {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 10%;
+	gap: 20px;
+}
