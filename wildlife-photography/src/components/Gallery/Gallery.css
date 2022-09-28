@@ -1,6 +1,6 @@
-.gallery-container {
-	width: 100%;
-	max-height: 1941px;
+#root {
+	--gallery-button-stripe: #d2ccbf;
+	--gallery-button-text: #343433;
 }
 
 .grid {
@@ -16,6 +16,9 @@
 }
 
 @media (max-width: 800px) {
+	.gallery-container {
+		overflow: hidden;
+	}
 	.grid {
 		column-count: 2;
 		column-gap: 6px;
@@ -38,4 +41,30 @@
 	.grid img:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.gallery-container h2 {
+	color: var(--gallery-button-text);
+	font-size: 0.9375rem;
+	font-weight: 300;
+	font-family: "Montserrat";
+	letter-spacing: 1.55px;
+	white-space: nowrap;
+	opacity: 0.85;
+	margin: 0;
+}
+
+.gallery-button-container div {
+	width: 156px;
+	height: 3px;
+	background-color: var(--gallery-button-stripe);
+}
+
+.gallery-button-container {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }

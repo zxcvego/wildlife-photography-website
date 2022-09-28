@@ -27,6 +27,10 @@ const Gallery = () => {
 					<img src={image9} alt="1" />
 					<img src={image10} alt="1" />
 				</div>
+				<div className="gallery-button-container">
+					<h2>SEE MY GALLERY</h2>
+					<div></div>
+				</div>
 			</div>
 		</>
 	);
