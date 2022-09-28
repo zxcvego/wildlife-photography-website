@@ -23,7 +23,6 @@ const CircleButton = (props: circleButtonI) => {
 					tempSliderImages.forEach((x: sliderImagesI) => (x.active = false));
 					tempSliderImages[id].active = true;
 					setSliderImages(tempSliderImages);
-					console.log(tempSliderImages);
 				}}
 			></div>
 		</>
