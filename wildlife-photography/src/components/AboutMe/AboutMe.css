@@ -1,30 +1,43 @@
 .about-me-container {
 	width: 100%;
-	height: 475px;
+	height: 29.6875rem;
 	background-color: #f4f3f1;
+}
+
+.content-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 80px;
+	height: 100%;
+	margin: auto;
+	width: 100%;
+	max-width: 1200px;
+	padding: 0px 40px;
+	box-sizing: border-box;
+}
+
+.content-container > div:first-child {
+	flex-basis: 35%;
+	display: flex;
+	flex-direction: column;
+}
+.content-container > div:last-child {
+	flex-basis: 65%;
 }
 
 .about-me-container h1 {
-	width: 338px;
-	height: 159px;
 	font-family: "Libre Bodoni";
 	font-weight: 400;
-	font-size: 46px;
+	font-size: 2.875rem;
+	margin: 0;
 }
 
 .about-me-container h2 {
-	width: 669px;
-	height: 192px;
 	font-family: "Montserrat";
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 31px;
-	position: relative;
-	bottom: 14px;
 }
 
 .about-me-container h2 br {
@@ -34,13 +47,15 @@
 }
 
 .about-me-decoration {
-	display: inline-flex;
-	justify-content: center;
+	display: flex;
+	justify-content: flex-start;
 	align-items: center;
 	gap: 14px;
-	position: absolute;
-	top: 116.5%;
-	left: 12%;
+	height: 100%;
+}
+
+.about-me-decoration h2 {
+	margin: 0;
 }
 
 .about-me-stripe {
@@ -56,4 +71,16 @@
 	font-family: "Montserrat";
 	font-weight: 300;
 	opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+	.content-container {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.about-me-container {
+		height: auto;
+		padding-top: 15px;
+	}
 }
