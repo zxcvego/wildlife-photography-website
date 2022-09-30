@@ -1,15 +1,15 @@
 import "./Gallery.css";
 
-import image1 from "../../assets/GalleryImages/image1.jpg";
-import image2 from "../../assets/GalleryImages/image2.jpg";
-import image3 from "../../assets/GalleryImages/image3.jpg";
-import image4 from "../../assets/GalleryImages/image4.jpg";
-import image5 from "../../assets/GalleryImages/image5.jpg";
-import image6 from "../../assets/GalleryImages/image6.jpg";
-import image7 from "../../assets/GalleryImages/image7.jpg";
-import image8 from "../../assets/GalleryImages/image8.jpg";
-import image9 from "../../assets/GalleryImages/image9.jpg";
-import image10 from "../../assets/GalleryImages/image10.jpg";
+import image1 from "../../assets/Gallery/image1.jpg";
+import image2 from "../../assets/Gallery/image2.jpg";
+import image3 from "../../assets/Gallery/image3.jpg";
+import image4 from "../../assets/Gallery/image4.jpg";
+import image5 from "../../assets/Gallery/image5.jpg";
+import image6 from "../../assets/Gallery/image6.jpg";
+import image7 from "../../assets/Gallery/image7.jpg";
+import image8 from "../../assets/Gallery/image8.jpg";
+import image9 from "../../assets/Gallery/image9.jpg";
+import image10 from "../../assets/Gallery/image10.jpg";
 
 const Gallery = () => {
 	return (
