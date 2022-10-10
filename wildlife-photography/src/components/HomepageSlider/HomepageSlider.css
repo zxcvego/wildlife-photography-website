@@ -59,3 +59,10 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+@media (max-width: 444px) {
+	.slider-title {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
