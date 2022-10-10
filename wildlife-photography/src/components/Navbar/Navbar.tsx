@@ -37,7 +37,7 @@ const Navbar = () => {
 				<h1>John Doe</h1>
 				<div className="navbar-buttons-container">
 					<div className="navbar-buttons-titles">
-						{isNavbarListMenuActive ? navbarButtons() : expandNavbarListMenu()}
+						{isNavbarListMenuActive ? expandNavbarListMenu() : navbarButtons()}
 					</div>
 					<h2 className="menu-icon">
 						<MenuIcon
