@@ -1,0 +1,148 @@
+#root {
+	--background: #edece8;
+	--decoration: #9d9480;
+	--project-name-title: #f4f3f1;
+	--arrows-background: #f4f3f173;
+	--arrows-background-border: #f4f3f172;
+	--view-projects-button-title: #343433;
+	--view-projects-button-stripe: #d2ccbf;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top-latest-projects,
+.bottom-latest-projects {
+	width: 100%;
+	min-height: 230px;
+	background: var(--background);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-latest-projects > * {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: relative;
+	top: 25px;
+}
+
+.decoration-flex {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	opacity: 0.85;
+	color: var(--decoration);
+}
+
+.decoration-flex > div {
+	width: 35px;
+	height: 1px;
+	background: black;
+}
+
+.top-latest-projects h1 {
+	font-family: "Libre Bodoni";
+	font-size: 2.875rem;
+	font-weight: 500;
+}
+
+.top-latest-projects h2 {
+	font-family: "Montserrat";
+	font-size: 0.9375rem;
+	font-weight: 500;
+	opacity: 0.85;
+	letter-spacing: 1.55px;
+	white-space: nowrap;
+}
+
+.decoration-flex div {
+	background: var(--decoration);
+	opacity: 0.45;
+}
+
+.mid-latest-projects {
+	height: 899px;
+}
+
+.mid-latest-projects div {
+	height: inherit;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.mid-flex {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mid-flex > div {
+	width: 54px;
+	height: 126px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	background: var(--arrows-background);
+	box-sizing: border-box;
+	border: 1px solid var(--arrows-background-border);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mid-flex > h1 {
+	text-align: center;
+	font-size: 3.25rem;
+	font-family: "Montserrat";
+	font-weight: 600;
+	color: var(--project-name-title);
+	letter-spacing: 6.5px;
+}
+
+.bottom-latest-projects div {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	cursor: pointer;
+}
+
+.bottom-latest-projects h2 {
+	font-size: 0.9375rem;
+	font-family: "Montserrat";
+	font-weight: 500;
+	letter-spacing: 1.8px;
+	color: var(--view-projects-button-title);
+	opacity: 0.85;
+}
+
+.bottom-latest-projects div div {
+	width: 148px;
+	height: 3px;
+	background: var(--view-projects-button-stripe);
+}
+
+@media (max-width: 850px) {
+	.mid-flex div {
+		height: 80px;
+		width: 45px;
+	}
+}
+
+@media (max-width: 600px) {
+	.mid-latest-projects div {
+		background-position-x: -360px;
+	}
+
+	.mid-latest-projects h1 {
+		font-size: 3rem;
+		max-width: 100%;
+		overflow: hidden;
+	}
+}
