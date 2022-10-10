@@ -1,8 +1,8 @@
 import "./HomepageSlider.css";
 import CircleButton from "./CircleButton";
-import nobleDeerImg from "../../assets/noble-deer.jpg";
-import tigerImg from "../../assets/tiger.jpg";
-import bearImg from "../../assets/bear.jpg";
+import nobleDeerImg from "../../assets/HomepageSlider/noble-deer.jpg";
+import tigerImg from "../../assets/HomepageSlider/tiger.jpg";
+import bearImg from "../../assets/HomepageSlider/bear.jpg";
 import { useState } from "react";
 
 export interface sliderImagesI {

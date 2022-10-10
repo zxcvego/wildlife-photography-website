@@ -5,7 +5,6 @@
 .homepage-slider-container {
 	width: 100%;
 	height: calc(100vh - 78px);
-	background-image: url("../../assets/noble-deer.jpg");
 }
 
 .homepage-slider-container img {
