@@ -8,11 +8,21 @@ const Navbar = () => {
 	const navbarButtons = () => {
 		return (
 			<>
-				<h2>HOME</h2>
-				<h2>ABOUT</h2>
-				<h2>GALLERY</h2>
-				<h2>PROJECTS</h2>
-				<h2>CONTACT</h2>
+				<h2>
+					<a href="#home">HOME</a>
+				</h2>
+				<h2>
+					<a href="#about">ABOUT</a>
+				</h2>
+				<h2>
+					<a href="#gallery">GALLERY</a>
+				</h2>
+				<h2>
+					<a href="#projects">PROJECTS</a>
+				</h2>
+				<h2>
+					<a href="#contact">CONTACT</a>
+				</h2>
 			</>
 		);
 	};
@@ -20,7 +30,7 @@ const Navbar = () => {
 	const expandNavbarListMenu = () => {
 		return (
 			<>
-				<div className="navbar-list">
+				<div id="home" className="navbar-list">
 					<div className="navbar-buttons-list">{navbarButtons()}</div>
 				</div>
 				<div
@@ -31,7 +41,6 @@ const Navbar = () => {
 		);
 	};
 
-	
 	return (
 		<>
 			<div className="navbar-container">

@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
 	return (
 		<>
-			<footer>
+			<footer id="contact">
 				<main className="footer-container">
 					<div className="footer-left-side">
 						<h2>Copyright © Nicole Jane 2022. All rights reserved.</h2>

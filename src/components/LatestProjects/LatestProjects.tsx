@@ -9,7 +9,7 @@ const LatestProjects = () => {
 		<>
 			<section className="top-latest-projects">
 				<div>
-					<div className="decoration-flex">
+					<div id="projects" className="decoration-flex">
 						<div></div>
 						<h2>PROJECTS</h2>
 					</div>
@@ -17,9 +17,9 @@ const LatestProjects = () => {
 				</div>
 			</section>
 
-			<main className="mid-latest-projects">
+			<section className="mid-latest-projects">
 				<div className="royal-bengal-tiger">
-					<section className="mid-flex">
+					<main className="mid-flex">
 						<div>
 							<ArrowBackIosNewIcon />
 						</div>
@@ -27,9 +27,9 @@ const LatestProjects = () => {
 						<div>
 							<ArrowForwardIosIcon />
 						</div>
-					</section>
+					</main>
 				</div>
-			</main>
+			</section>
 
 			<section className="bottom-latest-projects">
 				<div>

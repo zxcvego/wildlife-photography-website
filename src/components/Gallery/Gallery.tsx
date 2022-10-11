@@ -14,7 +14,7 @@ import image10 from "../../assets/Gallery/image10.jpg";
 const Gallery = () => {
 	return (
 		<>
-			<div className="gallery-container">
+			<div id="gallery" className="gallery-container">
 				<div className="grid">
 					<img src={image1} alt="1" />
 					<img src={image2} alt="1" />
