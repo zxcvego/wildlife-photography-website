@@ -10,22 +10,29 @@ import image7 from "../../assets/Gallery/image7.jpg";
 import image8 from "../../assets/Gallery/image8.jpg";
 import image9 from "../../assets/Gallery/image9.jpg";
 import image10 from "../../assets/Gallery/image10.jpg";
+import SingleImage from "./SingleImage";
 
 const Gallery = () => {
+	const galleryImages = [
+		{ image: image1, imageDescription: "image1Desc" },
+		{ image: image2, imageDescription: "image2Desc" },
+		{ image: image3, imageDescription: "image3Desc" },
+		{ image: image4, imageDescription: "image4Desc" },
+		{ image: image5, imageDescription: "image5Desc" },
+		{ image: image6, imageDescription: "image6Desc" },
+		{ image: image7, imageDescription: "image7Desc" },
+		{ image: image8, imageDescription: "image8Desc" },
+		{ image: image9, imageDescription: "image9Desc" },
+		{ image: image10, imageDescription: "image10Desc" },
+	];
+
 	return (
 		<>
 			<div id="gallery" className="gallery-container">
 				<div className="grid">
-					<img src={image1} alt="1" />
-					<img src={image2} alt="1" />
-					<img src={image3} alt="1" />
-					<img src={image4} alt="1" />
-					<img src={image5} alt="1" />
-					<img src={image6} alt="1" />
-					<img src={image7} alt="1" />
-					<img src={image8} alt="1" />
-					<img src={image9} alt="1" />
-					<img src={image10} alt="1" />
+					{[...Array(10)].map((_x, i) => (
+						<SingleImage key={i} id={i} galleryImages={galleryImages} />
+					))}
 				</div>
 				<div className="gallery-button-container">
 					<h2>SEE MY GALLERY</h2>
