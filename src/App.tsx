@@ -4,7 +4,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Gallery from "./components/Gallery/Gallery";
 import LatestProjects from "./components/LatestProjects/LatestProjects";
 import Sponsors from "./components/Sponsors/Sponsors";
-
+import Footer from "./components/Footer/Footer";
 const App = () => {
 	return (
 		<>
@@ -14,6 +14,7 @@ const App = () => {
 			<Gallery />
 			<LatestProjects />
 			<Sponsors />
+			<Footer />
 		</>
 	);
 };
