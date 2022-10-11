@@ -54,5 +54,7 @@
 	.footer-left-side,
 	.footer-right-side {
 		margin: 0;
+		min-width: 400px;
+		text-align: center;
 	}
 }
