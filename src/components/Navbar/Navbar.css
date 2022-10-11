@@ -7,7 +7,6 @@
 }
 
 .menu-icon {
-	overflow: hidden;
 }
 
 .navbar-container {
@@ -16,7 +15,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	overflow: hidden;
 	width: 100%;
 	position: fixed;
 	z-index: 99999;
@@ -58,11 +56,11 @@ a:hover {
 .navbar-list {
 	display: flex;
 	width: 40%;
-	height: 30%;
+	height: 200px;
 	justify-content: center;
 	background-color: var(--navbar-background);
 	position: absolute;
-	top: 0;
+	top: 0%;
 	left: 30%;
 	z-index: 2;
 }
@@ -80,6 +78,7 @@ a:hover {
 	align-items: center;
 	align-content: center;
 	gap: 20px;
+	position: relative;
 }
 
 .dim {
