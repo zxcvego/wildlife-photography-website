@@ -13,9 +13,9 @@ const LatestProjects = () => {
 
 	return (
 		<>
-			<section className="top-latest-projects">
+			<section id="projects" className="top-latest-projects">
 				<div>
-					<div id="projects" className="decoration-flex">
+					<div className="decoration-flex">
 						<div></div>
 						<h2>PROJECTS</h2>
 					</div>
