@@ -17,6 +17,9 @@
 	justify-content: space-between;
 	align-items: center;
 	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
 }
 
 .navbar-container h1 {
@@ -47,8 +50,9 @@
 	cursor: pointer;
 }
 
-.navbar-buttons-container h2:first-child {
-	font-weight: 500;
+a:hover {
+	font-weight: 600 !important;
+	font-size: inherit;
 }
 
 .navbar-list {

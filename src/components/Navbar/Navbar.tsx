@@ -42,24 +42,22 @@ const Navbar = () => {
 	};
 
 	return (
-		<>
-			<div className="navbar-container">
-				<h1>John Doe</h1>
-				<div className="navbar-buttons-container">
-					<div className="navbar-buttons-titles">
-						{isNavbarListMenuActive ? expandNavbarListMenu() : navbarButtons()}
-					</div>
-					<h2 className="menu-icon">
-						<MenuIcon
-							onClick={() => {
-								setIsNavbarListMenuActive(!isNavbarListMenuActive);
-								console.log(isNavbarListMenuActive);
-							}}
-						/>
-					</h2>
+		<div className="navbar-container">
+			<h1>John Doe</h1>
+			<div className="navbar-buttons-container">
+				<div className="navbar-buttons-titles">
+					{isNavbarListMenuActive ? expandNavbarListMenu() : navbarButtons()}
 				</div>
+				<h2 className="menu-icon">
+					<MenuIcon
+						onClick={() => {
+							setIsNavbarListMenuActive(!isNavbarListMenuActive);
+							console.log(isNavbarListMenuActive);
+						}}
+					/>
+				</h2>
 			</div>
-		</>
+		</div>
 	);
 };
 
