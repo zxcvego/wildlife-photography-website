@@ -12,31 +12,37 @@ import image9 from "../../assets/Gallery/image9.jpg";
 import image10 from "../../assets/Gallery/image10.jpg";
 import SingleImage from "./SingleImage";
 
-const Gallery = () => {
-	const galleryImages = [
-		{ image: image1, imageDescription: "image1Desc" },
-		{ image: image2, imageDescription: "image2Desc" },
-		{ image: image3, imageDescription: "image3Desc" },
-		{ image: image4, imageDescription: "image4Desc" },
-		{ image: image5, imageDescription: "image5Desc" },
-		{ image: image6, imageDescription: "image6Desc" },
-		{ image: image7, imageDescription: "image7Desc" },
-		{ image: image8, imageDescription: "image8Desc" },
-		{ image: image9, imageDescription: "image9Desc" },
-		{ image: image10, imageDescription: "image10Desc" },
-	];
+const galleryImages = [
+	{ image: image1, imageDescription: "red deer" },
+	{ image: image2, imageDescription: "red panda" },
+	{ image: image3, imageDescription: "african lions" },
+	{ image: image4, imageDescription: "african lions" },
+	{ image: image5, imageDescription: "innocent buffalo" },
+	{ image: image6, imageDescription: "northern\n white\n rhinoceros" },
+	{ image: image7, imageDescription: "forest owl" },
+	{ image: image8, imageDescription: "common chimpanzee" },
+	{ image: image9, imageDescription: "red deer" },
+	{ image: image10, imageDescription: "plains zebra" },
+];
 
+const Gallery = () => {
 	return (
 		<>
 			<div id="gallery" className="gallery-container">
 				<div className="grid">
 					{[...Array(10)].map((_x, i) => (
-						<SingleImage key={i} id={i} galleryImages={galleryImages} />
+						<SingleImage
+							key={i}
+							image={galleryImages[i].image}
+							imageDescription={galleryImages[i].imageDescription}
+						/>
 					))}
 				</div>
 				<div className="gallery-button-container">
-					<h2>SEE MY GALLERY</h2>
-					<div></div>
+					<span>
+						<h2>SEE MY GALLERY</h2>
+						<div></div>
+					</span>
 				</div>
 			</div>
 		</>

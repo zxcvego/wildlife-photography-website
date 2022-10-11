@@ -1,19 +1,18 @@
-import { useState } from "react";
 import "./SingleImage.css";
 
-const SingleImage = (props: any) => {
-	const { galleryImages, id } = props;
-	const [ifOnHover, setIfOnHover] = useState(false);
+interface imageDetailsI {
+	image: string;
+	imageDescription: string;
+}
 
-	console.log(galleryImages[id]);
+const SingleImage = (props: imageDetailsI) => {
+	const { image, imageDescription } = props;
+
 	return (
-		<>
-			<img
-				src={galleryImages[id].image}
-				alt={galleryImages[id].imageDescription}
-				onClick={() => setIfOnHover(true)}
-			/>
-		</>
+		<div className="image-wrapper">
+			<p className="image-description">{imageDescription}</p>
+			<img src={image} alt={imageDescription} />
+		</div>
 	);
 };
 
