@@ -19,7 +19,7 @@ const HomepageSlider = () => {
 	]);
 	return (
 		<>
-			<div className="homepage-slider-container">
+			<div id="home" className="homepage-slider-container">
 				<img src={sliderImages[sliderImageNumber].image} alt="slider" />
 				<div className="slider-content-container">
 					<div className="slider-upper-title-container">
