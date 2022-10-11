@@ -6,12 +6,17 @@
 	display: none;
 }
 
+.menu-icon {
+	overflow: hidden;
+}
+
 .navbar-container {
 	height: 78px;
 	background-color: var(--navbar-background);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	overflow: hidden;
 }
 
 .navbar-container h1 {
@@ -24,7 +29,7 @@
 }
 
 .navbar-buttons-container {
-	display: flex;
+	width: 10;
 }
 
 .navbar-buttons-titles {
@@ -94,5 +99,3 @@
 		margin-right: 50px;
 	}
 }
-
-

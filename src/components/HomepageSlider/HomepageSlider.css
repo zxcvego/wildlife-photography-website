@@ -65,3 +65,7 @@
 		margin-bottom: 10px;
 	}
 }
+
+.slider-content-container {
+	overflow: hidden;
+}
