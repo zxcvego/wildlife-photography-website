@@ -5,6 +5,12 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
 
 const LatestProjects = () => {
+	const [currentProject, setCurrentProject] = useState(0);
+	const projects = [
+		{ name: "royal-bengal-tiger", caption: "royal bengal tiger" },
+		{ name: "rhinos", caption: "southern rhinoceros" },
+	];
+
 	return (
 		<>
 			<section className="top-latest-projects">
@@ -18,13 +24,23 @@ const LatestProjects = () => {
 			</section>
 
 			<section className="mid-latest-projects">
-				<div className="royal-bengal-tiger">
+				<div className={projects[currentProject].name}>
 					<main className="mid-flex">
-						<div>
+						<div
+							onClick={() => {
+								if (!(currentProject - 1))
+									setCurrentProject(currentProject - 1);
+							}}
+						>
 							<ArrowBackIosNewIcon />
 						</div>
-						<h1>ROYAL BENGAL TIGER</h1>
-						<div>
+						<h1>{projects[currentProject].caption}</h1>
+						<div
+							onClick={() => {
+								if (currentProject + 1 !== projects.length)
+									setCurrentProject(currentProject + 1);
+							}}
+						>
 							<ArrowForwardIosIcon />
 						</div>
 					</main>
