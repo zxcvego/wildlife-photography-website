@@ -8,12 +8,7 @@
 	margin-bottom: 12px;
 }
 
-.image-wrapper > img {
-	z-index: 0;
-}
-
 .image-description {
-	/* width:  */
 	position: absolute;
 	z-index: 999;
 	top: 50%;
@@ -24,6 +19,7 @@
 
 .image-wrapper:hover > .image-description {
 	opacity: 1;
+	animation: fadeIn 0.3s ease-in;
 }
 
 .image-wrapper:after {
