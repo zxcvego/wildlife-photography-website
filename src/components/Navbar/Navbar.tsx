@@ -30,7 +30,7 @@ const Navbar = () => {
 	const expandNavbarListMenu = () => {
 		return (
 			<>
-				<div id="home" className="navbar-list">
+				<div id="home" className="navbar-list animate__fadeInDown">
 					<div className="navbar-buttons-list">{navbarButtons()}</div>
 				</div>
 				<div

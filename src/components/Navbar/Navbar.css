@@ -6,9 +6,6 @@
 	display: none;
 }
 
-.menu-icon {
-}
-
 .navbar-container {
 	height: 78px;
 	background-color: var(--navbar-background);
@@ -63,6 +60,7 @@ a:hover {
 	top: 0%;
 	left: 30%;
 	z-index: 2;
+	animation: fadeInDown 0.5s;
 }
 
 .navbar-list .navbar-buttons-list h2 {
