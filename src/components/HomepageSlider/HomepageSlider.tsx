@@ -20,8 +20,12 @@ const HomepageSlider = () => {
 	]);
 	return (
 		<>
-			<div id="home" className="homepage-slider-container">
-				<img src={sliderImages[sliderImageNumber].image} alt="slider" />
+			<div className="homepage-slider-container">
+				<img
+					id="homepage"
+					src={sliderImages[sliderImageNumber].image}
+					alt="slider"
+				/>
 				<div className="slider-content-container">
 					<div className="slider-upper-title-container animate__fadeInDown">
 						<div className="white-stripe"></div>

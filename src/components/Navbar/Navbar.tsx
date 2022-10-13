@@ -9,7 +9,7 @@ const Navbar = () => {
 		return (
 			<>
 				<h2>
-					<a href="#home">HOME</a>
+					<a href="#homepage">HOME</a>
 				</h2>
 				<h2>
 					<a href="#about">ABOUT</a>
