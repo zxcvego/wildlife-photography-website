@@ -30,7 +30,7 @@ const Gallery = () => {
 		<>
 			<div id="gallery" className="gallery-container">
 				<div className="grid">
-					{[...Array(10)].map((_x, i) => (
+					{[...Array(galleryImages.length)].map((_x, i) => (
 						<SingleImage
 							key={i}
 							image={galleryImages[i].image}
