@@ -6,17 +6,17 @@ const Footer = () => {
 			<footer id="contact">
 				<main className="footer-container">
 					<div className="footer-left-side">
-						<h2>Copyright © Nicole Jane 2022. All rights reserved.</h2>
-						<br></br>
-						<h2>
+						<p>Copyright © Nicole Jane 2022. All rights reserved.</p>
+						<br />
+						<p>
 							Commodo lectus in integer montes, consectetur sed nisl
 							sollicitudin sit sem sem odio mattis.
-						</h2>
+						</p>
 					</div>
 					<div className="footer-right-side">
-						<h2>
+						<p>
 							Designed by - <span>TemplatesJungle</span>
-						</h2>
+						</p>
 					</div>
 				</main>
 			</footer>

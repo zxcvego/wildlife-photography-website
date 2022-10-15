@@ -3,7 +3,7 @@
 	--footer-text: #f4f3f1;
 }
 
-.footer-container div h2 {
+.footer-container div p {
 	font-size: 0.9375rem;
 	font-family: "Montserrat";
 	font-weight: 400;
@@ -31,7 +31,7 @@
 	white-space: nowrap;
 }
 
-.footer-right-side h2 span {
+.footer-right-side p span {
 	font-weight: 500;
 }
 
