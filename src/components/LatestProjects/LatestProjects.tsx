@@ -13,7 +13,7 @@ const LatestProjects = () => {
 
 	return (
 		<>
-			<section id="projects" className="top-latest-projects">
+			<article id="projects" className="top-latest-projects">
 				<div>
 					<div className="decoration-flex">
 						<div></div>
@@ -21,10 +21,10 @@ const LatestProjects = () => {
 					</div>
 					<h1>Latest Projects</h1>
 				</div>
-			</section>
+			</article>
 
-			<section className="mid-latest-projects">
-				<div className={projects[currentProject].name}>
+			<article className="mid-latest-projects">
+				<div className={`${projects[currentProject].name}`}>
 					<main className="mid-flex">
 						<div
 							onClick={() => {
@@ -45,14 +45,14 @@ const LatestProjects = () => {
 						</div>
 					</main>
 				</div>
-			</section>
+			</article>
 
-			<section className="bottom-latest-projects">
+			<article className="bottom-latest-projects">
 				<div>
 					<h2>VIEW PROJECTS</h2>
 					<div></div>
 				</div>
-			</section>
+			</article>
 		</>
 	);
 };
