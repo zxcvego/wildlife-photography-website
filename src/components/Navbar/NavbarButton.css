@@ -1,0 +1,14 @@
+li {
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 0.9375rem;
+	font-family: "Montserrat";
+	font-weight: 400;
+	cursor: pointer;
+	letter-spacing: 1.92px;
+	overflow: hidden;
+}
+
+li a:hover {
+	font-weight: 600 !important;
+}

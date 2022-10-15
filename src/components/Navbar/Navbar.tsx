@@ -1,40 +1,47 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
+import NavbarButton from "./NavbarButton";
+import logo from "../../assets/john-doe-logo.svg";
+
+const buttons = [
+	{ title: "home", navigation: "homepage" },
+	{ title: "about", navigation: "about" },
+	{ title: "gallery", navigation: "gallery" },
+	{ title: "projects", navigation: "projects" },
+	{ title: "contact", navigation: "contact" },
+];
 
 const Navbar = () => {
 	const [isNavbarListMenuActive, setIsNavbarListMenuActive] = useState(false);
 
-	const navbarButtons = () => {
-		return (
-			<>
-				<h2>
-					<a href="#homepage">HOME</a>
-				</h2>
-				<h2>
-					<a href="#about">ABOUT</a>
-				</h2>
-				<h2>
-					<a href="#gallery">GALLERY</a>
-				</h2>
-				<h2>
-					<a href="#projects">PROJECTS</a>
-				</h2>
-				<h2>
-					<a href="#contact">CONTACT</a>
-				</h2>
-			</>
-		);
+	const turnOffNavbarList = () => {
+		if (isNavbarListMenuActive)
+			setIsNavbarListMenuActive(!isNavbarListMenuActive);
 	};
 
-	const expandNavbarListMenu = () => {
+	const navbarButtons = () => {
+		return [...Array(buttons.length)].map((_x, i) => (
+			<NavbarButton
+				key={i}
+				name={buttons[i].title}
+				navigatesTo={buttons[i].navigation}
+				turnOffNavbarList={turnOffNavbarList}
+			/>
+		));
+	};
+
+	const showHorizontalNavbarButtons = () => {
+		return <ul className="horizontal-navbar-buttons">{navbarButtons()}</ul>;
+	};
+
+	const showVerticalNavbarButtons = () => {
 		return (
 			<>
-				<div id="home" className="navbar-list animate__fadeInDown">
-					<div className="navbar-buttons-list">{navbarButtons()}</div>
-				</div>
+				<div className="navbar-list animate__fadeInDown">{navbarButtons()}</div>
+
 				<div
-					className="dim"
+					id="dim"
 					onClick={() => setIsNavbarListMenuActive(!isNavbarListMenuActive)}
 				></div>
 			</>
@@ -42,21 +49,16 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="navbar-container">
-			<h1>John Doe</h1>
-			<div className="navbar-buttons-container">
-				<div className="navbar-buttons-titles">
-					{isNavbarListMenuActive ? expandNavbarListMenu() : navbarButtons()}
-				</div>
-				<h2 className="menu-icon">
-					<MenuIcon
-						onClick={() => {
-							setIsNavbarListMenuActive(!isNavbarListMenuActive);
-							console.log(isNavbarListMenuActive);
-						}}
-					/>
-				</h2>
-			</div>
+		<div className="navbar-container" id="home">
+			<img src={logo} alt="" />
+			{isNavbarListMenuActive
+				? showVerticalNavbarButtons()
+				: showHorizontalNavbarButtons()}
+			<span id="menu-icon">
+				<MenuIcon
+					onClick={() => setIsNavbarListMenuActive(!isNavbarListMenuActive)}
+				/>
+			</span>
 		</div>
 	);
 };

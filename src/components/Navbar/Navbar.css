@@ -2,8 +2,10 @@
 	--navbar-background: #edece8;
 }
 
-.menu-icon {
+#menu-icon {
 	display: none;
+	margin-right: 50px;
+	cursor: pointer;
 }
 
 .navbar-container {
@@ -14,40 +16,27 @@
 	align-items: center;
 	width: 100%;
 	position: fixed;
-	z-index: 99999;
+	z-index: 5;
 }
 
-.navbar-container h1 {
-	font-size: 2.25rem;
-	font-family: "Libre Bodoni";
-	font-weight: 400;
-	margin-left: 50px;
-
-	white-space: nowrap;
-}
-
-.navbar-buttons-container {
-	width: 10;
-}
-
-.navbar-buttons-titles {
+.horizontal-navbar-buttons {
 	display: flex;
-	align-items: center;
 	gap: 73px;
-	letter-spacing: 1.92px;
+}
+
+.navbar-list {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+}
+
+.navbar-container img {
+	margin-left: 50px;
+}
+
+.navbar-container .horizontal-navbar-buttons {
 	margin-right: 50px;
-}
-
-.navbar-buttons-container h2 {
-	font-size: 0.9375rem;
-	font-family: "Montserrat";
-	font-weight: 400;
-	cursor: pointer;
-}
-
-a:hover {
-	font-weight: 600 !important;
-	font-size: inherit;
 }
 
 .navbar-list {
@@ -63,23 +52,7 @@ a:hover {
 	animation: fadeInDown 0.5s;
 }
 
-.navbar-list .navbar-buttons-list h2 {
-	display: block;
-	justify-content: center;
-}
-
-.navbar-list .navbar-buttons-list {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	gap: 20px;
-	position: relative;
-}
-
-.dim {
+#dim {
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -90,13 +63,12 @@ a:hover {
 	top: 0;
 }
 
-@media (max-width: 980px) {
-	.navbar-buttons-titles h2 {
+@media (max-width: 1000px) {
+	.horizontal-navbar-buttons {
 		display: none;
 	}
 
-	.menu-icon {
+	#menu-icon {
 		display: block;
-		margin-right: 50px;
 	}
 }
