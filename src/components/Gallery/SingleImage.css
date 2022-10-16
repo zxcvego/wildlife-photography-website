@@ -15,6 +15,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	opacity: 0;
+	line-height: 2rem;
 }
 
 .image-wrapper:hover > .image-description {
