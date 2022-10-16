@@ -50,7 +50,7 @@ const Navbar = () => {
 
 	return (
 		<div className="navbar-container" id="home">
-			<img src={logo} alt="" />
+			<img src={logo} alt="John Doe" />
 			{isNavbarListMenuActive
 				? showVerticalNavbarButtons()
 				: showHorizontalNavbarButtons()}
