@@ -38,7 +38,7 @@ const HomepageSlider = () => {
 					<h2 className="slider-bottom-title animate__fadeInUp">SINCE 2012</h2>
 				</div>
 				<div className="circle-button-container">
-					{[...Array(3)].map((_x, i) => (
+					{[...Array(sliderImages.length)].map((_x, i) => (
 						<CircleButton
 							key={i}
 							id={i}
